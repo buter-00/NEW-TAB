@@ -1,0 +1,85 @@
+html, body { height: 100%; }
+body {
+	background-color: #f1f1f1;
+	font-size: 13px;
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+.fl-l {float: left;}
+.fl-r {float: right;}
+
+.mb-0 { margin-bottom: 0; }
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-45 { margin-bottom: 45px; }
+.mb-60 { margin-bottom: 60px; }
+
+.z-99 {z-index: 99;}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.span-a {
+	color: #F06292;
+	border-bottom: 1px dashed #F48FB1;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+
+
+.row-3 {
+	margin-right: -3px;
+	margin-left: -3px;
+}
+.row-3 > div {
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.row-5 {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.row-5 > div {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.black-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: #000;
+	opacity: 0.8;
+}
+
+
+
+
+.fade-enter-active, .fade-leave-active { transition: opacity .3s; }
+.fade-enter, .fade-leave-to { opacity: 0; }
+
+.bounce-enter-active {
+	animation: bounce-in .4s;
+ }
+ .bounce-leave-active {
+	animation: bounce-in .4s reverse;
+ }
+ @keyframes bounce-in {
+	0% {
+	  transform: scale(0);
+	}
+	75% {
+	  transform: scale(1.25);
+	}
+	100% {
+	  transform: scale(1);
+	}
+ }

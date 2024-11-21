@@ -1,0 +1,35 @@
+/* Base styles for code highlighting */
+pre {
+    background: #f5f2f0;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    background: #f5f2f0;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+/* Specific styles for different code elements */
+.comment {
+    color: #6a737d;
+}
+
+.keyword {
+    color: #d73a49;
+}
+
+.string {
+    color: #032f62;
+}
+
+.function {
+    color: #6f42c1;
+}
+
+.variable {
+    color: #005cc5;
+}
