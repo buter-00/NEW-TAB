@@ -238,7 +238,7 @@ function setDefaultAppData() {
 		favicon_sourse: "internet",
 		name: "Main Page",
 		bgColor: "#afd0d9",
-		bgImage: "https://images.unsplash.com/photo-1555381983-49b080e6ac89?w=1920&dpi=2"
+		bgImage: "https://images6.alphacoders.com/113/1139907.jpg"
 	}];
 
 	var j_boards;

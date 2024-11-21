@@ -1,180 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="New Tab">
-    <meta name="theme-color" content="#317EFB">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab Page</title>
-    <link rel="icon" href="icon-128.png" type="image/png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="STYLE/sunlight/New Tab Page-sunlight.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <script src="https://cdn.jsdelivr.net/npm/@interactjs/interactjs/index.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Новая вкладка</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/fa.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/animations.css">
 </head>
 
-<body style="background-image: url(https://en.free-wallpapers.su/data/media/21/big/pri6211.jpg); background-color: rgb(175, 208, 217);">
+<body>
+	<div id="app_main"></div>
 
-    <!--<body style="background-image: url('https://images.unsplash.com/photo-1555381983-49b080e6ac89?w=1920&dpi=2'); background-color: rgb(175, 208, 217);">-->
-    <div id="app_main">
-        <div id="header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="app-search">
-                            <div class="app-search-input">
-                                <button class="btn btn-default">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <button id="plusButton">+</button>
-                        <button id="allButton">Всё</button>
-                        <button id="codeButton">Программирование</button>
-                        <button id="programButton">Программы</button>
-                        <!--                            <button id="extensionsButton">Расширения</button>-->
-
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <button class="btn btn-default">
-                            <i class="fa fa-plus"></i>
-                        </button>
-                        <button type="button" class="btn btn-default">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--            <div id="app-modal"><div class="modal-wrap"><div class="modal-bg"></div> <div class="app-modal"><span class="app-modal-close"><i class="fa fa-times"></i></span> <div class="app-modal-body"><div><h4 class="text-center">Создание нового списка</h4> <p class="text-center mb-15">Введите название списка и нажмите кнопу "создать"</p> <div class="form-group"><label for="">Название списка</label> <input id="list_title" type="text" class="form-control"></div> <div class="form-group mb-0"><button type="button" class="btn btn-danger">Отмена</button> <button type="button" class="btn btn-success fl-r"><i class="fa fa-save"></i> Создать список</button></div></div></div></div></div></div>-->
-        </div>
-        <div id="app-board" style="min-width: 1210px;">
-            <div class="row row-5">
-                <div id="_board_col_0" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone">
-                        <div id="list_id_0">
-                            <!---->
-                            <div class="links-container">
-                                <!---->
-                                <div class="links-container-header">
-                                    <div class="links-container-title">Social Networks 2</div>
-                                    <div class="title-btns"><span class="btn"><i class="fa fa-fw fa-ellipsis-v"></i></span></div>
-                                </div>
-                                <div class="links-container-body">
-                                    <div>
-                                        <div class="dropArea">
-                                            <div title="Instagram" class="link"><img src="https://www.pinterest.com/favicon.ico">
-                                                Instagram
-                                            </div>
-                                            <div title="Pinterest" class="link"><img src="https://www.pinterest.com/favicon.ico">
-                                                Pinterest
-                                            </div>
-                                            <div title="Tumblr" class="link"><img src="https://www.tumblr.com/favicon.ico">
-                                                Tumblr
-                                            </div>
-                                        </div>
-                                        <!---->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="_board_col_1" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone"></div>
-                </div>
-                <div id="_board_col_2" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone">
-                        <div id="list_id_1">
-                            <!---->
-                            <div class="links-container">
-                                <!---->
-                                <div class="links-container-header">
-                                    <div class="links-container-title">Online Shopping</div>
-                                    <div class="title-btns"><span class="btn"><i class="fa fa-fw fa-ellipsis-v"></i></span></div>
-                                </div>
-                                <div class="links-container-body">
-                                    <div>
-                                        <div class="dropArea">
-                                            <div title="Amazon" class="link"><img src="https://www.amazon.com/favicon.ico">
-                                                Amazon
-                                            </div>
-                                            <div title="Ebay" class="link"><img src="https://www.ebay.com/favicon.ico">
-                                                Ebay
-                                            </div>
-                                            <div title="AliExpress" class="link"><img src="https://www.aliexpress.com/favicon.ico">
-                                                AliExpress
-                                            </div>
-                                        </div>
-                                        <!---->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="_board_col_3" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone"></div>
-                </div>
-                <div id="_board_col_4" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone"></div>
-                </div>
-                <div id="_board_col_5" class="_board_cols" style="width: 16.6667%;">
-                    <div class="columns-dropzone">
-                        <div id="list_id_2">
-                            <!---->
-                            <div class="links-container">
-                                <!---->
-                                <div class="links-container-header">
-                                    <div class="links-container-title">Games</div>
-                                    <div class="title-btns"><span class="btn"><i class="fa fa-fw fa-ellipsis-v"></i></span></div>
-                                </div>
-                                <div class="links-container-body">
-                                    <div>
-                                        <div class="dropArea">
-                                            <div title="Steam" class="link"><img src="https://steamcommunity.com/favicon.ico">
-                                                Steam
-                                            </div>
-                                            <div title="Origin" class="link"><img src=" ">
-                                                Origin
-                                            </div>
-                                            <div title="Epic Games" class="link"><img src="https://www.epicgames.com/favicon.ico">
-                                                Epic Games
-                                            </div>
-                                            <div title="World of Tanks" class="link"><img src="https://worldoftanks.com/favicon.ico">
-                                                World of Tanks
-                                            </div>
-                                            <div title="World of Warships" class="link"><img src="https://worldofwarships.com/favicon.ico">
-                                                World of Warships
-                                            </div>
-                                        </div>
-                                        <!---->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <footer>
-        <p>version: 1.6</p>
-    </footer>
-    <script type="text/javascript" src="SCRIPT/New Tab Page-script.js"></script>
-    <script type="text/javascript" src="SCRIPT/theme-toggle.js"></script>
-    <script type="text/javascript" src="DATA/plus.js"></script>
-    <script type="text/javascript" src="DATA/all.js"></script>
-    <script type="text/javascript" src="DATA/code.js"></script>
-    <script type="text/javascript" src="DATA/programs.js"></script>
-    <script type="text/javascript" src="DATA/extensions.js"></script>
-    <!--	<script src="/js/libs/aes.js"></script>-->
-    <!--	<script src="/js/libs/helper.js"></script>-->
-    <!--	<script src="/js/libs/unsplash.js"></script>-->
-    <!--    	<script src="/js/newtab.js"></script>-->
+	<script src="/js/libs/aes.js"></script>
+	<script src="/js/libs/helper.js"></script>
+	<script src="/js/libs/unsplash.js"></script>
+	<script src="/js/newtab.js"></script>
 </body>
-
 </html>
