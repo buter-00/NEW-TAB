@@ -22,10 +22,6 @@
     "background": {
         "service_worker": "js/bg.js"
     },
-    "action": {
-        "default_icon": "imgs/48.png",
-        "default_popup": "pages/popup.html"
-    },
     "content_scripts": [
         {
             "js": ["js/content_script.js"],
